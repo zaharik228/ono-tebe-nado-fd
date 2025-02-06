@@ -1,6 +1,12 @@
-.header-nav {
+header {
   display: grid;
+  align-items: center;
   grid-template-columns: 1fr min-content 1fr;
+  padding-top: 40px;
+  padding-bottom: 45px;
+}
+
+.header-nav {
   align-items: center;
   padding-top: 75px;
   padding-bottom: 90px;
@@ -20,35 +26,35 @@
   text-underline-offset: 4px;
 }
 
-.nav-item-1 {
+.list-style-none {
   list-style: none;
-  font-size: 18px;
 }
 
 .header-logo {
   height: 110px;
   width: 135px;
-  margin-right: 50px;
+  margin-top: -10px;
 }
 
 .address {
   list-style: none;
-  justify-self: center;
-  max-width: 290px;
+  max-width: 310px;
   font-size: 18px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
-  padding-left: 70px;
-  padding-bottom: 5px;
   line-height: 1.4;
+  padding-left: 107px;
+  padding-bottom: 12px;
+  display: grid;
 }
 
-.phone-number {
-  text-decoration: underline;
-  text-underline-offset: 4px;
+.topside {
+  justify-self: center;
+  max-width: 340px;
+  margin-right: -30px;
 }
 
-.email {
+.address-list-element {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -60,9 +66,14 @@
 
 .overlay {
   position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 
 }
 
@@ -78,37 +89,45 @@
 
 .cover-title {
   display: flex;
+  flex-direction: column;
   gap: 15px;
   letter-spacing: 30px;
   position: relative;
   color: white;
   font-size: 100px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
 }
 
-.cover-title-2{
-  padding-top: 135px;
+.title-ono {
+  text-transform: uppercase;
 }
 
-.cover-title-3{
-  position: absolute;
-  padding-top: 270px;
-  padding-left: 615px;
+.title-tebe {
+  align-self: center;
+  padding-top: 5px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.title-nado {
+  align-self: end;
+  padding-top: 2px;
+  padding-right: 20px;
+  text-transform: uppercase;
 }
 
 .description {
   display: flex;
-  gap: 105px;
+  padding-top: 117px;
 }
 
 .description-text {
   position: relative;
   color: white;
   font-size: 22px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   word-spacing: 19px;
-  padding-top: 254px;
-  padding-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .cover-button {
@@ -116,12 +135,13 @@
   position: relative;
   color: white;
   font-size: 22px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
   background: none;
-  border: white 1px solid;
-  padding-left: 31px;
-  padding-right: 31px;
-  margin-top: 238px;
+  border: currentColor 1px solid;
+  margin-left: 105px;
+  margin-top: -10px;
+  padding: 10px 31px;
 }
 
 .lots {
@@ -132,8 +152,9 @@
   padding-top: 182px;
   padding-bottom: 25px;
   padding-left: 65px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 40px;
+  text-transform: uppercase;
 }
 
 .cards {
@@ -148,46 +169,26 @@
 }
 
 .card-title {
-  padding-top: 50px;
-  padding-left: 40px;
+  max-width: 255px;
   position: relative;
   color: white;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 22px;
   text-decoration: underline;
   text-transform: uppercase;
   text-underline-offset: 3px;
   z-index: 1;
+  padding-top: 48px;
 }
 
-.card-1-text {
-  padding-top: 278px;
-  padding-left: 40px;
+.card-text {
+  max-width: 255px;
   position: relative;
   color: white;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 20px;
   z-index: 1;
-}
-
-.card-2-text {
-  padding-top: 36px;
-  padding-left: 40px;
-  position: relative;
-  color: white;
-  font-family: "Raleway";
-  font-size: 20px;
-  z-index: 1;
-}
-
-.card-3-text {
-  padding-top: 132px;
-  padding-left: 40px;
-  position: relative;
-  color: white;
-  font-family: "Raleway";
-  font-size: 20px;
-  z-index: 1;
+  padding-bottom: 45px;
 }
 
 .lots-look-more-link-container {
@@ -195,7 +196,7 @@
 }
 
 .lots-look-more-link {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 20px;
   padding-left: 65px;
   text-underline-offset: 4px;
@@ -204,7 +205,7 @@
 .card {
   margin-bottom: 32px;
   position: relative;
-  height: 596px;
+  min-height: 596px;
   width: 334px;
   text-decoration: none;
   background-size: cover;
@@ -223,15 +224,10 @@
   background-image: url(..//images/card-lot-03.jpg);  
 }
 
-
-
-
-
 .about-auction {
-  height: 596px;
   padding-top: 150px;
   padding-left: 70px;
-  margin-bottom: 150px;
+  padding-bottom: 35px;
   display: grid;
   grid-template-columns: min-content 1fr;
 }
@@ -251,74 +247,70 @@
   width: 148px;
 }
 
+.about-column {
+  display: flex;
+  flex-direction: column;
+  min-height: 560px;
+}
+
 .about-title {
   padding-top: 105px;
   padding-left: 72px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 40px;
+  text-transform: uppercase;
 }
 
-.about-text-1 {
-  font-family: "Raleway";
+.about-text {
+  font-family: "Raleway", sans-serif;
   font-size: 20px;
   padding-left: 74px;
+  max-width: 750px;
+}
+
+.about-text:nth-child(2) {
   padding-top: 100px;
+  padding-bottom: 22px;
 }
 
-.about-text-2 {
-  font-family: "Raleway";
-  font-size: 20px;
-  padding-left: 74px;
-  padding-top: 25px;
+.about-text:nth-child(3) {
+  max-width: 765px;
 }
 
 .footer {
   padding-top: 150px;
-  padding-left: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
-.footer-address {
-  line-height: 1.4;
-  list-style: none;
-  font-size: 18px;
-  font-family: "Raleway";
-  font-style: normal;
+.bottom-side {
+  margin-left: -55px;
+  margin-top: -5px;
+  max-width: 350px;
 }
 
 .menu {
   list-style: none;
   text-align: center;
-  padding-right: 45px;
 }
 
 .menu-link {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
 }
 
 .social-media {
   display: flex;
-  padding-left: 60px;
+  padding-left: 80px;
   gap: 48px;
   list-style: none;
 }
 
-.youtube {
+.social-media-icon {
   height: 48px;
   width: 48px;
 }
 
-.vk {
-  height: 48px;
-  width: 48px;
-}
-
-.pinterest {
-  height: 48px;
-  width: 48px;
-}
 
 
 
