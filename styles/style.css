@@ -25,7 +25,7 @@ header {
  padding-left: 5px;
 }
 
-.nav-item {
+.nav-link {
   font-size: 18px;
   text-underline-offset: 4px;
 }
@@ -296,6 +296,8 @@ header {
 .menu {
   list-style: none;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-link {
