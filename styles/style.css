@@ -1,3 +1,7 @@
+.active {
+  text-decoration: none;
+}
+
 header {
   display: grid;
   align-items: center;
@@ -61,17 +65,12 @@ header {
   position: relative;
 }
 
-.overlay {
+.overlay::before {
   position: absolute;
+  content: '';
   inset: 0;
-  width: 100%;
-  height: 100%;
   background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
+  background-size: cover;
 }
 
 .cover {
@@ -95,18 +94,18 @@ header {
   font-family: "Raleway", sans-serif;
 }
 
-.title-ono {
+.first-line {
   text-transform: uppercase;
 }
 
-.title-tebe {
+.second-line {
   align-self: center;
   padding-top: 5px;
   padding-right: 15px;
   text-transform: uppercase;
 }
 
-.title-nado {
+.third-line {
   align-self: end;
   padding-top: 2px;
   padding-right: 20px;
@@ -164,8 +163,15 @@ header {
 }
 
 .card-link {
+  gap: 35px;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
 }
+
 
 .card-title {
   max-width: 255px;
@@ -202,24 +208,24 @@ header {
 }
 
 .card {
+  display: flex;
   margin-bottom: 32px;
   position: relative;
-  min-height: 596px;
   width: 334px;
   text-decoration: none;
   background-size: cover;
   background-position: center;
 }
 
-.card-image-people {
+.image-people {
   background-image: url(../images/card-lot-01.jpg);
 }
 
-.card-image-door {
+.image-door {
   background-image: url(..//images/card-lot-02.jpg);  
 }
 
-.card-image-painting {
+.image-painting {
   background-image: url(..//images/card-lot-03.jpg);  
 }
 
@@ -283,8 +289,7 @@ header {
 }
 
 .bottom-side {
-  margin-left: -55px;
-  margin-top: -5px;
+  padding-left: 50px;
   max-width: 350px;
 }
 
