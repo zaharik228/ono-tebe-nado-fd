@@ -94,22 +94,20 @@ header {
   font-family: "Raleway", sans-serif;
 }
 
-.first-line {
+.title-word {
   text-transform: uppercase;
 }
 
-.second-line {
+.mid {
   align-self: center;
   padding-top: 5px;
   padding-right: 15px;
-  text-transform: uppercase;
 }
 
-.third-line {
+.bot {
   align-self: end;
   padding-top: 2px;
   padding-right: 20px;
-  text-transform: uppercase;
 }
 
 .description {
@@ -255,7 +253,6 @@ header {
 .about-column {
   display: flex;
   flex-direction: column;
-  min-height: 560px;
 }
 
 .about-title {
@@ -284,6 +281,7 @@ header {
 
 .footer {
   padding-top: 150px;
+  padding-bottom: 82px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
